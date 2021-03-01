@@ -1,0 +1,33 @@
+.header-h1 {
+    color: black;
+    margin: 0;
+    margin-left: 45px;
+    margin-top: 15px;    
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 45px;
+    width: 200px;        
+    margin: 0;
+    position: absolute;
+    margin-top: -40px;
+    margin-right: 10px;
+    right: 0;
+}
+
+.fab {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px;
+    }
+}

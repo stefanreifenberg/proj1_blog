@@ -1,0 +1,58 @@
+.posts-container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 65px auto 65px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";        
+}
+
+.post-avatar {
+    float:left;
+}
+
+.posts-header { 
+    grid-area: hd;
+    background-color: #f6f2ef;    
+}
+
+.posts-content { 
+    grid-area: main;
+    background-color: #f6f2ef;
+}
+
+.posts-footer { 
+    grid-area: ft;
+    background-color: #f6f2ef;
+    text-align: center;
+}
+
+.post-metadata {
+    font-size: .8em;
+    line-height: 5px;
+    margin-top: 40px;
+}
+
+.post-main-content {
+    font-size: 1.2em;
+}
+
+.share-social-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.share-social {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
