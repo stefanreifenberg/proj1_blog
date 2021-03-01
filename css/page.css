@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.sidebar { 
+.section { 
     grid-area: sd;
     background-color: #f6f2ef;    
     border-right: 1px solid #dee2e6;
@@ -33,16 +33,16 @@
     padding-bottom: 0.5em;
 }
 
-.avatar-sidebar {
+.avatar-section {
     display: flex;
     justify-content: center;
 }
 
-.sidebar-bio {
+.section-bio {
     color: gray;
 }
 
-.content { 
+.article { 
     grid-area: main;
     background-color: #f6f2ef;
 }
