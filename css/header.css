@@ -22,12 +22,22 @@
     color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .social {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;     
+        width: 150px;              
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .social {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        width: 100%;
-        margin-top: 10px;
+        height: 80px;
+        width: 45px;
+        margin-top: 40px;        
     }
 }

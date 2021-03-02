@@ -12,6 +12,34 @@
     "ft ft ft ft ft ft ft ft";        
 }
 
+
+@media only screen and (max-width:600px) {
+    .posts-container {    
+        display: grid; 
+        height: 100%; 
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 65px auto 65px; 
+        grid-template-areas: 
+        "hd hd hd"
+        "main main main"        
+        "ft ft ft";          
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .posts-container {    
+        display: grid; 
+        height: 100%; 
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: 65px auto 65px; 
+        grid-template-areas: 
+        "hd"        
+        "main"
+        "ft";          
+    }
+}
+ 
+
 .post-avatar {
     float:left;
 }
@@ -55,4 +83,16 @@
     width: 20%;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.post-text-em {
+    font-style: italic;
+}
+
+.post-text-bold {
+    font-weight: bold;
+}
+
+.post-text-ul {
+    text-decoration: underline;
 }
